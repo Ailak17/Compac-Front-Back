@@ -1,0 +1,60 @@
+.inicios{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    max-width: 350px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    align-items: center;
+    justify-content: center;
+}
+.inicio{
+    font-size: 40px;
+}
+
+/* Estilo para los campos de entrada */
+.inputs {
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre los campos */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+/* Estilo para el contenedor del select */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+   
+    margin-bottom: 10px; /* Espacio inferior entre el select y el siguiente campo */
+    cursor: pointer;
+  }
+  
+  /* Estilo para las opciones dentro del select */
+  select option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Estilo para el select al recibir focus */
+  select:focus {
+    border-color: #078f9e; /* Color verde al tener focus */
+    outline: none; /* Quitar outline para un diseño más limpio */
+  }
+  /* Estilos generales para el botón */
+button {
+    padding: 10px 20px; /* Añadir espacio dentro del botón */
+    font-size: 16px; /* Tamaño de texto */
+    border: 1px solid #078f9e; /* Borde verde */
+    background-color: #06A5B7; /* Fondo verde */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano al pasar por encima */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Efectos de transición */
+    margin-top: 10px; /* Espacio superior */
+  }
+  
+ 

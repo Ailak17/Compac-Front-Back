@@ -1,0 +1,20 @@
+.inicios{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    max-width: 350px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    align-items: center;
+    justify-content: center;
+}
+.inicio{
+    font-size: 40px;
+}
+
+/* Estilo para los campos de entrada */
+.inputs {
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre los campos */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

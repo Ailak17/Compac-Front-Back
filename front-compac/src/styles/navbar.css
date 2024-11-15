@@ -1,0 +1,46 @@
+/* styles.css o el archivo de estilo correspondiente */
+.navbar {
+    background-color: #06A5B7;
+    color: white;
+    padding: 30px ;
+    margin: 0 ;
+    font-size: x-large;
+  }
+
+  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-section button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .auth-section button:hover {
+    background-color: #d32f2f;
+  }
+
+  
+  

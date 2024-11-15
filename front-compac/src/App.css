@@ -1,0 +1,9 @@
+/* Eliminar márgenes y paddings predeterminados */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Esto asegura que los márgenes y padding no afecten el tamaño total */
+  font-family: "Encode Sans", serif;
+}
+
+
