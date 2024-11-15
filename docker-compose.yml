@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: ./deploy
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/api
+    environment:
+      - DATABASE_URL=mysql+pymysql://user:password@mysql_db:3306/mydatabase
+    depends_on:
+      - mysql_db
+    command: ["sh", "-c", "python main.py && uvicorn main:app --host 0.0.0.0 --port 8000 --reload"]
+
+  mysql_db:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
